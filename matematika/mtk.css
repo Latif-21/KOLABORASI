@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background-color: #e8ffff;
+    color: #164747;
+    line-height: 1.8;
+}
+
+h2 {
+    color: #087f80;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    background-color: #2ee2e2;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+p {
+    max-width: 750px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    border-left: 6px solid #2ee2e2;
+    box-shadow: 0 3px 10px rgba(0, 80, 80, 0.08);
+    text-align: justify;
+}
+
+strong {
+    color: #087f80;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    p {
+        padding: 20px;
+        font-size: 14px;
+    }
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #087f80;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #2ee2e2;
+}
+
+/* Pengaturan khusus halaman Matematika */
+body.halaman-mtk {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+/* Jarak judul */
+body.halaman-mtk h2 {
+    margin: 30px 15px;
+}
+
+/* Mendorong footer ke bawah */
+body.halaman-mtk > hr {
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Tampilan footer */
+body.halaman-mtk footer {
+    width: 100%;
+    background-color: #087f80;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Menghilangkan kotak putih pada tulisan footer */
+body.halaman-mtk footer p {
+    max-width: none;
+    margin: 5px;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: white;
+    text-align: center;
+    text-indent: 0;
+}
