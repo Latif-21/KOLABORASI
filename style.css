@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8ffff;
+    color: #164747;
+    line-height: 1.7;
+}
+
+header {
+    background-image: url("../KOLABORASI/images/background-home.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #087f80;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #087f80;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.4);
+}
+
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    color: #087f80;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #2ee2e2;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #c9fafa;
+    margin: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    padding: 35px 25px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #c9fafa;
+}
+
+section h2 {
+    color: #087f80;
+    font-size: 25px;
+}
+
+section p {
+    color: #326565;
+}
+
+section a {
+    color: #087f80;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    color: #2ee2e2;
+    text-decoration: underline;
+}
+
+#produk h3 {
+    color: #087f80;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#produk img {
+    width: 100%;
+    max-width: 350px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #c9fafa;
+}
+
+#produk img:hover {
+    opacity: 0.85;
+}
+
+footer {
+    background-color: #087f80;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    section {
+        padding: 25px 18px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    #produk img {
+        height: 200px;
+    }
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #c9fafa;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card h3 {
+    margin-top: 5px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.anggota-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.anggota-card {
+    background-color: #c9fafa;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.anggota-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e8ffff;
+}
+
+.anggota-card h3 {
+    color: #087f80;
+    margin-bottom: 5px;
+}
+
+.anggota-card p {
+    color: #326565;
+}
+
+@media screen and (max-width: 600px) {
+    .anggota-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.anggota-kontak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.anggota-kontak a {
+    background-color: #087f80;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.anggota-kontak a:hover {
+    background-color: #2ee2e2;
+    color: #164747;
+    transform: scale(1.1);
+}
+
+.materi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.materi-card {
+    background-color: #c9fafa;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.materi-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .materi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.navbar-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: block;
+    margin-top: 0;
+    padding: 14px 12px;
+    text-align: center;
+    background-color: #087f80;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-sticky a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar-sticky a:hover {
+    color: #2ee2e2;
+}
+
+#pengertian, #materi, #produk {
+    scroll-margin-top: 75px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-sticky {
+        padding: 12px 5px;
+    }
+
+    .navbar-sticky a {
+        margin: 0 6px;
+        font-size: 14px;
+    }
+}
